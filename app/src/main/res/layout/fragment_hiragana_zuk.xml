@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HiraganaZukFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbarSize="0dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:padding="20dp"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+                <android.widget.Button
+                    android:id="@+id/btn1_1"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="が" />
+
+                <android.widget.Button
+                    android:id="@+id/btn1_2"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぎ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn1_3"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぐ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn1_4"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="げ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn1_5"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ご" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.widget.Button
+                    android:id="@+id/btn2_1"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ざ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn2_2"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="じ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn2_3"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ず" />
+
+                <android.widget.Button
+                    android:id="@+id/btn2_4"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぜ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn2_5"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぞ" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.widget.Button
+                    android:id="@+id/btn3_1"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="だ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn3_2"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぢ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn3_3"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="づ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn3_4"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="で" />
+
+                <android.widget.Button
+                    android:id="@+id/btn3_5"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ど" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row4"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.widget.Button
+                    android:id="@+id/btn4_1"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ば" />
+
+                <android.widget.Button
+                    android:id="@+id/btn4_2"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="び" />
+
+                <android.widget.Button
+                    android:id="@+id/btn4_3"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぶ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn4_4"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="べ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn4_5"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぼ" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row4.5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row5"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.widget.Button
+                    android:id="@+id/btn5_1"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぱ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn5_2"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぴ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn5_3"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぷ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn5_4"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぺ" />
+
+                <android.widget.Button
+                    android:id="@+id/btn5_5"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/square"
+                    android:text="ぽ" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+
+</FrameLayout>
