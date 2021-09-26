@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TitleActivity">
+
+    <Button
+        android:id="@+id/btnGojuon"
+        android:layout_width="132dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="288dp"
+        android:text="Gojūon\n五十音"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Gojūon\n五十音" />
+
+    <Button
+        android:id="@+id/btnPractice"
+        android:layout_width="132dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="420dp"
+        android:text="Speak Up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Speak Up" />
+
+    <Button
+        android:id="@+id/btnConvertion"
+        android:layout_width="132dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="520dp"
+        android:text="Convertion Practice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Convertion Practice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

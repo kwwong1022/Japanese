@@ -28,7 +28,7 @@
 
 
                 <android.widget.Button
-                    android:id="@+id/btn1_1"
+                    android:id="@+id/nBtnA"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -37,7 +37,7 @@
                     android:text="あ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn1_2"
+                    android:id="@+id/nBtnI"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -46,7 +46,7 @@
                     android:text="い" />
 
                 <android.widget.Button
-                    android:id="@+id/btn1_3"
+                    android:id="@+id/nBtnU"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -55,7 +55,7 @@
                     android:text="う" />
 
                 <android.widget.Button
-                    android:id="@+id/btn1_4"
+                    android:id="@+id/nBtnE"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -64,7 +64,7 @@
                     android:text="え" />
 
                 <android.widget.Button
-                    android:id="@+id/btn1_5"
+                    android:id="@+id/nBtnO"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -80,7 +80,7 @@
                 android:layout_weight="1">
 
                 <android.widget.Button
-                    android:id="@+id/btn2_1"
+                    android:id="@+id/nBtnKa"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -89,7 +89,7 @@
                     android:text="か" />
 
                 <android.widget.Button
-                    android:id="@+id/btn2_2"
+                    android:id="@+id/nBtnKi"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -98,7 +98,7 @@
                     android:text="き" />
 
                 <android.widget.Button
-                    android:id="@+id/btn2_3"
+                    android:id="@+id/nBtnKu"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -107,7 +107,7 @@
                     android:text="く" />
 
                 <android.widget.Button
-                    android:id="@+id/btn2_4"
+                    android:id="@+id/nBtnKe"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -116,7 +116,7 @@
                     android:text="け" />
 
                 <android.widget.Button
-                    android:id="@+id/btn2_5"
+                    android:id="@+id/nBtnKo"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -132,7 +132,7 @@
                 android:layout_weight="1">
 
                 <android.widget.Button
-                    android:id="@+id/btn3_1"
+                    android:id="@+id/nBtnSa"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -141,7 +141,7 @@
                     android:text="さ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn3_2"
+                    android:id="@+id/nBtnSi"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -150,7 +150,7 @@
                     android:text="し" />
 
                 <android.widget.Button
-                    android:id="@+id/btn3_3"
+                    android:id="@+id/nBtnSu"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -159,7 +159,7 @@
                     android:text="す" />
 
                 <android.widget.Button
-                    android:id="@+id/btn3_4"
+                    android:id="@+id/nBtnSe"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -168,7 +168,7 @@
                     android:text="せ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn3_5"
+                    android:id="@+id/nBtnSo"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -184,7 +184,7 @@
                 android:layout_weight="1">
 
                 <android.widget.Button
-                    android:id="@+id/btn4_1"
+                    android:id="@+id/nBtnTa"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -193,7 +193,7 @@
                     android:text="た" />
 
                 <android.widget.Button
-                    android:id="@+id/btn4_2"
+                    android:id="@+id/nBtnTi"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -202,7 +202,7 @@
                     android:text="ち" />
 
                 <android.widget.Button
-                    android:id="@+id/btn4_3"
+                    android:id="@+id/nBtnTu"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -211,7 +211,7 @@
                     android:text="つ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn4_4"
+                    android:id="@+id/nBtnTe"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -220,7 +220,7 @@
                     android:text="て" />
 
                 <android.widget.Button
-                    android:id="@+id/btn4_5"
+                    android:id="@+id/nBtnTo"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -236,7 +236,7 @@
                 android:layout_weight="1">
 
                 <android.widget.Button
-                    android:id="@+id/btn5_1"
+                    android:id="@+id/nBtnNa"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -245,7 +245,7 @@
                     android:text="な" />
 
                 <android.widget.Button
-                    android:id="@+id/btn5_2"
+                    android:id="@+id/nBtnNi"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -254,7 +254,7 @@
                     android:text="に" />
 
                 <android.widget.Button
-                    android:id="@+id/btn5_3"
+                    android:id="@+id/nBtnNu"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -263,7 +263,7 @@
                     android:text="ぬ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn5_4"
+                    android:id="@+id/nBtnNe"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -272,7 +272,7 @@
                     android:text="ね" />
 
                 <android.widget.Button
-                    android:id="@+id/btn5_5"
+                    android:id="@+id/nBtnNo"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -288,7 +288,7 @@
                 android:layout_weight="1">
 
                 <android.widget.Button
-                    android:id="@+id/btn6_1"
+                    android:id="@+id/nBtnHa"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -297,7 +297,7 @@
                     android:text="は" />
 
                 <android.widget.Button
-                    android:id="@+id/btn6_2"
+                    android:id="@+id/nBtnHi"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -306,7 +306,7 @@
                     android:text="ひ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn6_3"
+                    android:id="@+id/nBtnHu"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -315,7 +315,7 @@
                     android:text="ふ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn6_4"
+                    android:id="@+id/nBtnHe"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -324,7 +324,7 @@
                     android:text="へ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn6_5"
+                    android:id="@+id/nBtnHo"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -340,7 +340,7 @@
                 android:layout_weight="1">
 
                 <android.widget.Button
-                    android:id="@+id/btn7_1"
+                    android:id="@+id/nBtnMa"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -349,7 +349,7 @@
                     android:text="ま" />
 
                 <android.widget.Button
-                    android:id="@+id/btn7_2"
+                    android:id="@+id/nBtnMi"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -358,7 +358,7 @@
                     android:text="み" />
 
                 <android.widget.Button
-                    android:id="@+id/btn7_3"
+                    android:id="@+id/nBtnMu"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -367,7 +367,7 @@
                     android:text="む" />
 
                 <android.widget.Button
-                    android:id="@+id/btn7_4"
+                    android:id="@+id/nBtnMe"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -376,7 +376,7 @@
                     android:text="め" />
 
                 <android.widget.Button
-                    android:id="@+id/btn7_5"
+                    android:id="@+id/nBtnMo"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -392,7 +392,7 @@
                 android:layout_weight="1">
 
                 <android.widget.Button
-                    android:id="@+id/btn8_1"
+                    android:id="@+id/nBtnYa"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -401,7 +401,7 @@
                     android:text="や" />
 
                 <android.widget.Button
-                    android:id="@+id/btn8_2"
+                    android:id="@+id/nBtnYi"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -410,7 +410,7 @@
                     android:text="い" />
 
                 <android.widget.Button
-                    android:id="@+id/btn8_3"
+                    android:id="@+id/nBtnYu"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -419,7 +419,7 @@
                     android:text="ゆ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn8_4"
+                    android:id="@+id/nBtnYe"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -428,7 +428,7 @@
                     android:text="え" />
 
                 <android.widget.Button
-                    android:id="@+id/btn8_5"
+                    android:id="@+id/nBtnYo"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -444,7 +444,7 @@
                 android:layout_weight="1">
 
                 <android.widget.Button
-                    android:id="@+id/btn9_1"
+                    android:id="@+id/nBtnRa"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -453,7 +453,7 @@
                     android:text="ら" />
 
                 <android.widget.Button
-                    android:id="@+id/btn9_2"
+                    android:id="@+id/nBtnRi"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -462,7 +462,7 @@
                     android:text="り" />
 
                 <android.widget.Button
-                    android:id="@+id/btn9_3"
+                    android:id="@+id/nBtnRu"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -471,7 +471,7 @@
                     android:text="る" />
 
                 <android.widget.Button
-                    android:id="@+id/btn9_4"
+                    android:id="@+id/nBtnRe"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -480,7 +480,7 @@
                     android:text="れ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn9_5"
+                    android:id="@+id/nBtnRo"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -496,7 +496,7 @@
                 android:layout_weight="1">
 
                 <android.widget.Button
-                    android:id="@+id/btn10_1"
+                    android:id="@+id/nBtnWa"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -505,7 +505,7 @@
                     android:text="わ" />
 
                 <android.widget.Button
-                    android:id="@+id/btn10_2"
+                    android:id="@+id/nBtnWi"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -514,7 +514,7 @@
                     android:text="い" />
 
                 <android.widget.Button
-                    android:id="@+id/btn10_3"
+                    android:id="@+id/nBtnWu"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -523,7 +523,7 @@
                     android:text="う" />
 
                 <android.widget.Button
-                    android:id="@+id/btn10_4"
+                    android:id="@+id/nBtnWe"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -532,7 +532,7 @@
                     android:text="え" />
 
                 <android.widget.Button
-                    android:id="@+id/btn10_5"
+                    android:id="@+id/nBtnWo"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"
@@ -548,7 +548,7 @@
                 android:layout_weight="1">
 
                 <android.widget.Button
-                    android:id="@+id/btn11_1"
+                    android:id="@+id/nBtnN"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_margin="5dp"

@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE); //will hide the title
-        getSupportActionBar().hide();
+        //getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
         btn_katagana = findViewById(R.id.btnswitch1);
         btn_zuk = findViewById(R.id.btnswitch2);
@@ -75,14 +75,14 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                 if (HiraKata == HIRA) {
                     fragment = new HiraganaFragment();
                     Log.i(TAG, "HIRA");
-                    btn_katagana.setText("ç‰‡å‡å");
+                    btn_katagana.setText("HIRA");
                 }
                 else if (HiraKata == KATA) {
                     fragment = new KataganaFragment();
                     Log.i(TAG, "KATA");
-                    btn_katagana.setText("å¹³å‡å");
+                    btn_katagana.setText("KATA");
                 }
-                btn_zuk.setText("æ¿éŸ³/åŠæ¿éŸ³");
+                btn_zuk.setText("NORMAL");
                 break;
 
             case (ZUK):
@@ -90,15 +90,15 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                 if (HiraKata == HIRA) {
                     fragment = new HiraganaZukFragment();
                     Log.i(TAG, "HIRA");
-                    btn_katagana.setText("ç‰‡å‡å");
+                    btn_katagana.setText("HIRA");
 
                 }
                 else if (HiraKata == KATA) {
                     fragment = new KataganaZukFragment();
                     Log.i(TAG, "KATA");
-                    btn_katagana.setText("å¹³å‡å");
+                    btn_katagana.setText("KATA");
                 }
-                btn_zuk.setText("æ‹—éŸ³");
+                btn_zuk.setText("ZUK");
                 break;
         }
         Log.i(TAG, "HiraKata = " + HiraKata + "CZA = " + CZA);

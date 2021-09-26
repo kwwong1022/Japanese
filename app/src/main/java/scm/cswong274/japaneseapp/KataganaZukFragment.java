@@ -1,10 +1,14 @@
 package scm.cswong274.japaneseapp;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
+import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
@@ -13,7 +17,7 @@ import androidx.fragment.app.Fragment;
  * Use the {@link KataganaZukFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class KataganaZukFragment extends Fragment implements View.OnClickListener {
+public class KataganaZukFragment extends Fragment implements View.OnClickListener, View.OnLongClickListener {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,6 +28,9 @@ public class KataganaZukFragment extends Fragment implements View.OnClickListene
     private String mParam1;
     private String mParam2;
     Button[][] buttons = new  Button[5][5];
+    private AlertDialog.Builder diaBuilder;
+    private AlertDialog dialog;
+    TextToSpeech mTTs;
     public KataganaZukFragment() {
         // Required empty public constructor
     }
@@ -61,48 +68,85 @@ public class KataganaZukFragment extends Fragment implements View.OnClickListene
                              Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_katagana_zuk, container, false);
         // Inflate the layout for this fragment [y,x]
-        buttons[0][0] = v.findViewById(R.id.btn1_1);
-        buttons[0][1] = v.findViewById(R.id.btn1_2);
-        buttons[0][2] = v.findViewById(R.id.btn1_3);
-        buttons[0][3] = v.findViewById(R.id.btn1_4);
-        buttons[0][4] = v.findViewById(R.id.btn1_5);
+        buttons[0][0] = v.findViewById(R.id.btnGa);
+        buttons[0][1] = v.findViewById(R.id.btnGi);
+        buttons[0][2] = v.findViewById(R.id.btnGu);
+        buttons[0][3] = v.findViewById(R.id.btnGe);
+        buttons[0][4] = v.findViewById(R.id.btnGo);
 
-        buttons[1][0] = v.findViewById(R.id.btn2_1);
-        buttons[1][1] = v.findViewById(R.id.btn2_2);
-        buttons[1][2] = v.findViewById(R.id.btn2_3);
-        buttons[1][3] = v.findViewById(R.id.btn2_4);
-        buttons[1][4] = v.findViewById(R.id.btn2_5);
+        buttons[1][0] = v.findViewById(R.id.btnZa);
+        buttons[1][1] = v.findViewById(R.id.btnZi);
+        buttons[1][2] = v.findViewById(R.id.btnZu);
+        buttons[1][3] = v.findViewById(R.id.btnZe);
+        buttons[1][4] = v.findViewById(R.id.btnZo);
 
-        buttons[2][0] = v.findViewById(R.id.btn3_1);
-        buttons[2][1] = v.findViewById(R.id.btn3_2);
-        buttons[2][2] = v.findViewById(R.id.btn3_3);
-        buttons[2][3] = v.findViewById(R.id.btn3_4);
-        buttons[2][4] = v.findViewById(R.id.btn3_5);
+        buttons[2][0] = v.findViewById(R.id.btnDa);
+        buttons[2][1] = v.findViewById(R.id.btnDi);
+        buttons[2][2] = v.findViewById(R.id.btnDu);
+        buttons[2][3] = v.findViewById(R.id.btnDe);
+        buttons[2][4] = v.findViewById(R.id.btnDo);
 
-        buttons[3][0] = v.findViewById(R.id.btn4_1);
-        buttons[3][1] = v.findViewById(R.id.btn4_2);
-        buttons[3][2] = v.findViewById(R.id.btn4_3);
-        buttons[3][3] = v.findViewById(R.id.btn4_4);
-        buttons[3][4] = v.findViewById(R.id.btn4_5);
+        buttons[3][0] = v.findViewById(R.id.btnBa);
+        buttons[3][1] = v.findViewById(R.id.btnBi);
+        buttons[3][2] = v.findViewById(R.id.btnBu);
+        buttons[3][3] = v.findViewById(R.id.btnBe);
+        buttons[3][4] = v.findViewById(R.id.btnBo);
 
-        buttons[4][0] = v.findViewById(R.id.btn5_1);
-        buttons[4][1] = v.findViewById(R.id.btn5_2);
-        buttons[4][2] = v.findViewById(R.id.btn5_3);
-        buttons[4][3] = v.findViewById(R.id.btn5_4);
-        buttons[4][4] = v.findViewById(R.id.btn5_5);
-
+        buttons[4][0] = v.findViewById(R.id.btnPa);
+        buttons[4][1] = v.findViewById(R.id.btnPi);
+        buttons[4][2] = v.findViewById(R.id.btnPu);
+        buttons[4][3] = v.findViewById(R.id.btnPe);
+        buttons[4][4] = v.findViewById(R.id.btnPo);
         for (int i=0;i<buttons.length;i++)//y Size
         {
             for (int k=0;k<buttons[i].length;k++)//x size
             {
                 buttons[i][k].setOnClickListener(this);
+                buttons[i][k].setOnLongClickListener(this);
+                //Log.i( "Button Setup", String.valueOf(buttons[i][k].getId()));
             }
         }
-        return inflater.inflate(R.layout.fragment_katagana_zuk, container, false);
+        return v;
     }
 
     @Override
     public void onClick(View view) {
+        //mTTs.speak("Tester え",TextToSpeech.QUEUE_ADD,null);
+        Log.i("btnID", String.valueOf(view.getId()));
+        for (int i=0;i<buttons.length;i++)//y Size
+        {
+            for (int k=0;k<buttons[i].length;k++)//x size
+            {
+                if (view.getId() == buttons[i][k].getId()){
+                    mTTs.speak(buttons[i][k].getText().toString(), TextToSpeech.QUEUE_ADD,null);
+                    Log.i("btnID", "Speak " + buttons[i][k].getText().toString());
+                }
+            }
+        }
+    }
 
+    void createDialog(String text){
+        diaBuilder = new AlertDialog.Builder(this.getContext());
+        View popUp = getLayoutInflater().inflate(R.layout.activity_drawing,null);
+        diaBuilder.setView(popUp);
+        DrawingActivity drawingActivity = popUp.findViewById(R.id.drawingActivity3);
+        TextView txt = popUp.findViewById(R.id.txtWord);
+        txt.setText(text);
+        dialog = diaBuilder.create();
+        dialog.show();//Code tweaked from https://www.youtube.com/watch?v=4GYKOzgQDWI&ab_channel=CodingMark
+
+    }
+    public boolean onLongClick(View view) {
+        Log.i("btnID", String.valueOf(view.getId()));
+        for (int i=0;i<buttons.length;i++)//y Size
+        {
+            for (int k=0;k<buttons[i].length;k++)//x size
+            {
+                if (view.getId() == buttons[i][k].getId()){
+                    createDialog((String) buttons[i][k].getText());
+                }
+            }
+        }
+        return false;
     }
 }
